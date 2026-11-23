@@ -1,42 +1,82 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Folk</title>
+<title>Folk - متجر إلكتروني</title>
 <style>
-body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-header { background-color: #333; color: #fff; padding: 10px 20px; display: flex; justify-content: space-between; align-items: center; }
-nav a { color: #fff; margin-left: 15px; text-decoration: none; }
-.container { padding: 20px; display: flex; flex-wrap: wrap; gap: 20px; }
-.product { border: 1px solid #ddd; padding: 15px; width: 200px; text-align: center; }
-.product h3 { margin: 0 0 10px; }
-.btn { background-color: #28a745; color: #fff; padding: 10px 15px; border: none; cursor: pointer; text-decoration: none; display: inline-block; }
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #121212; color: #e0e0e0; }
+header { background-color: #1f1f1f; padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #333; }
+.logo { font-size: 24px; font-weight: bold; color: #fff; }
+nav a { color: #bbb; margin-left: 20px; text-decoration: none; transition: color 0.3s; }
+nav a:hover { color: #fff; }
+.hero { padding: 80px 20px; text-align: center; background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://via.placeholder.com/1200x400') no-repeat center center/cover; }
+.hero h1 { font-size: 48px; margin-bottom: 10px; color: #fff; }
+.hero p { font-size: 18px; margin-bottom: 20px; color: #ccc; }
+.btn { background-color: #007bff; color: white; padding: 12px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+.btn:hover { background-color: #0056b3; }
+.section-title { text-align: center; margin: 40px 0 20px; color: #fff; }
+.product-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 0 20px; max-width: 1200px; margin: 0 auto; }
+.product-card { background-color: #1f1f1f; padding: 15px; border-radius: 8px; text-align: center; border: 1px solid #333; }
+.product-card img { max-width: 100%; height: 200px; object-fit: cover; border-radius: 4px; }
+.product-card h3 { margin: 15px 0 10px; color: #fff; }
+.product-card .price { color: #007bff; font-size: 18px; font-weight: bold; margin-bottom: 15px; }
+.featured { background-color: #1f1f1f; padding: 40px 20px; margin-top: 40px; border-top: 1px solid #333; border-bottom: 1px solid #333; }
+.featured-content { max-width: 800px; margin: 0 auto; text-align: center; }
+footer { text-align: center; padding: 40px; color: #777; font-size: 14px; }
 </style>
 </head>
 <body>
+
 <header>
-<div><h1>Folk</h1></div>
+<div class="logo">Folk</div>
 <nav>
-<a href="#">Home</a>
-<a href="#">Products</a>
-<a href="#">About</a>
+<a href="#">الرئيسية</a>
+<a href="#">المتجر</a>
+<a href="#">من نحن</a>
+<a href="#">اتصل بنا</a>
 </nav>
 </header>
-<div class="container">
-<div class="product">
-<h3>Product 1</h3>
-<p>$10.00</p>
-<a href="#" class="btn">Buy Now</a>
+
+<section class="hero">
+<h1>ستايلك، بشخصيتك أنت</h1>
+<p>أحدث صيحات الموضة والأناقة تصلك لحد باب البيت</p>
+<a href="#" class="btn">تسوق الآن</a>
+</section>
+
+<h2 class="section-title">اختر قطعتك</h2>
+<div class="product-grid">
+<div class="product-card">
+<img src="https://via.placeholder.com/250" alt="منتج">
+<h3>اسم القطعة 1</h3>
+<div class="price">١٠٠ ج.م</div>
+<a href="#" class="btn">أضف للسلة</a>
 </div>
-<div class="product">
-<h3>Product 2</h3>
-<p>$20.00</p>
-<a href="#" class="btn">Buy Now</a>
+<div class="product-card">
+<img src="https://via.placeholder.com/250" alt="منتج">
+<h3>اسم القطعة 2</h3>
+<div class="price">૧٥٠ ج.م</div>
+<a href="#" class="btn">أضف للسلة</a>
 </div>
-<div class="product">
-<h3>Product 3</h3>
-<p>$30.00</p>
-<a href="#" class="btn">Buy Now</a>
+<div class="product-card">
+<img src="https://via.placeholder.com/250" alt="منتج">
+<h3>اسم القطعة 3</h3>
+<div class="price">٢٠٠ ج.م</div>
+<a href="#" class="btn">أضف للسلة</a>
 </div>
 </div>
+
+<section class="featured">
+<div class="featured-content">
+<h2>[اسم القطعة المميزة]</h2>
+<p>وصف مختصر للقطعة المميزة يوضح جودتها ومميزاتها.</p>
+<div class="price">٢٥٠ ج.م</div>
+<br>
+<a href="#" class="btn">اشتري الآن</a>
+</div>
+</section>
+
+<footer>
+جميع الحقوق محفوظة © 2026 Folk
+</footer>
+
 </body>
 </html>
